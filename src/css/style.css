@@ -581,62 +581,6 @@ ul { list-style: none; }
 .produtos__card h3 { font-family: var(--font-serif); font-size: 1.3rem; color: var(--green-950); margin-bottom: 10px; }
 .produtos__card p { color: var(--ink-soft); font-size: 0.92rem; }
 
-/* ============ TECH ============ */
-.tech { background: var(--white); }
-.tech__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-.tech__item {
-    background: var(--cream);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 30px 26px;
-    transition: transform 0.4s var(--ease), box-shadow 0.4s, border-color 0.3s;
-}
-.tech__item:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--gold-400);
-}
-.tech__icon {
-    display: inline-grid;
-    place-items: center;
-    width: 52px; height: 52px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, var(--gold-400), var(--gold-600));
-    color: var(--green-950);
-    font-size: 1.5rem;
-    margin-bottom: 16px;
-    box-shadow: 0 8px 20px rgba(212, 169, 79, 0.3);
-}
-.tech__item h3 {
-    font-family: var(--font-serif);
-    font-size: 1.15rem;
-    color: var(--green-950);
-    margin-bottom: 8px;
-}
-.tech__item p { color: var(--ink-soft); font-size: 0.9rem; }
-.tech__footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-    margin-top: 40px;
-}
-.tech__pill {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--green-900);
-    background: rgba(18, 63, 56, 0.07);
-    border: 1px solid var(--border);
-    padding: 9px 18px;
-    border-radius: 100px;
-    transition: background 0.2s, transform 0.2s var(--ease), border-color 0.2s;
-}
-.tech__pill:hover { background: rgba(212, 169, 79, 0.15); border-color: var(--gold-400); transform: translateY(-2px); }
-
 /* ============ MOCKUP NOTE ============ */
 .mockup-note {
     background: var(--green-950);
@@ -816,7 +760,6 @@ ul { list-style: none; }
     .sobre__inner, .lazer__grid, .eventos__grid, .gastronomia__grid { grid-template-columns: 1fr; gap: 40px; }
     .sobre__img--alt { right: 0; }
     .apartamentos__grid, .produtos__grid { grid-template-columns: 1fr 1fr; }
-    .tech__grid { grid-template-columns: 1fr 1fr; }
     .highlights__grid { grid-template-columns: repeat(2, 1fr); }
     .localizacao__card { grid-template-columns: 1fr; }
     .footer__grid { grid-template-columns: 1fr 1fr; }
@@ -845,7 +788,7 @@ ul { list-style: none; }
     .section { padding: 80px 0; }
     .sobre__media { padding-bottom: 40px; }
     .sobre__badge { left: 0; }
-    .apartamentos__grid, .produtos__grid, .lazer__items, .tech__grid { grid-template-columns: 1fr; }
+    .apartamentos__grid, .produtos__grid, .lazer__items { grid-template-columns: 1fr; }
     .highlights { margin-top: -90px; }
     .highlights__grid { padding: 24px; gap: 14px; }
     .highlights__num { font-size: 2rem; }
