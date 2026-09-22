@@ -80,6 +80,37 @@
         animateables.forEach((el) => el.classList.add("in-view"));
     }
 
+    // ===== Animated counters (destaques) =====
+    const counters = $$(".count");
+    const animateCount = (el) => {
+        const target = parseInt(el.dataset.count, 10) || 0;
+        const dur = 1600;
+        const start = performance.now();
+        const tick = (now) => {
+            const p = Math.min((now - start) / dur, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(target * eased);
+            if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    };
+    if ("IntersectionObserver" in window && counters.length) {
+        const cio = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting) {
+                        animateCount(e.target);
+                        cio.unobserve(e.target);
+                    }
+                });
+            },
+            { threshold: 0.6 }
+        );
+        counters.forEach((c) => cio.observe(c));
+    } else {
+        counters.forEach((c) => { c.textContent = c.dataset.count; });
+    }
+
     // ===== Smooth anchor (offset do navbar) =====
     $$('a[href^="#"]').forEach((a) => {
         a.addEventListener("click", (e) => {
