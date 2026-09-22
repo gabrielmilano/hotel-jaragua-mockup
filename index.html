@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Jaraguá Real | Joaçaba - SC</title>
+    <meta name="description" content="Tradição em servir bem. 102 apartamentos, piscina térmica, sauna, gastronomia e centro de eventos no coração de Joaçaba - SC.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#home" class="navbar__brand">
+                <img src="src/img/logo.png" alt="Hotel Jaraguá Real">
+            </a>
+            <nav class="navbar__menu" id="navMenu">
+                <a href="#home" class="navbar__link">Início</a>
+                <a href="#sobre" class="navbar__link">Sobre</a>
+                <a href="#apartamentos" class="navbar__link">Apartamentos</a>
+                <a href="#lazer" class="navbar__link">Lazer</a>
+                <a href="#eventos" class="navbar__link">Eventos</a>
+                <a href="#gastronomia" class="navbar__link">Gastronomia</a>
+                <a href="#produtos" class="navbar__link">Produtos</a>
+                <a href="#localizacao" class="navbar__link">Localização</a>
+                <a href="https://reservas.desbravador.com.br/hotel-app/hotel-jaragua" target="_blank" rel="noopener" class="btn btn--gold navbar__cta">Reservar</a>
+            </nav>
+            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero__slider" id="heroSlider">
+            <div class="hero__slide" data-src="src/img/banner-1.png" style="background-image:url('src/img/banner-1.png')"></div>
+            <div class="hero__slide" data-src="src/img/banner-2.png" style="background-image:url('src/img/banner-2.png')"></div>
+            <div class="hero__slide" data-src="src/img/banner-3.png" style="background-image:url('src/img/banner-3.png')"></div>
+            <div class="hero__slide" data-src="src/img/banner-4.png" style="background-image:url('src/img/banner-4.png')"></div>
+            <div class="hero__slide" data-src="src/img/banner-5.png" style="background-image:url('src/img/banner-5.png')"></div>
+            <div class="hero__slide" data-src="src/img/banner-6.png" style="background-image:url('src/img/banner-6.png')"></div>
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content container" data-animate="fade-up">
+            <span class="hero__eyebrow">Bem-vindo ao</span>
+            <h1 class="hero__title">Hotel <span>Jaraguá Real</span></h1>
+            <p class="hero__subtitle">Tradição em servir bem. Conforto, estrutura completa e uma localização privilegiada no centro de Joaçaba - SC.</p>
+            <div class="hero__actions">
+                <a href="https://reservas.desbravador.com.br/hotel-app/hotel-jaragua" target="_blank" rel="noopener" class="btn btn--gold">Faça sua reserva</a>
+                <a href="#apartamentos" class="btn btn--outline">Conheça os apartamentos</a>
+            </div>
+        </div>
+        <div class="hero__dots" id="heroDots"></div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights__grid">
+                <div class="highlights__item" data-animate="fade-up" data-delay="0">
+                    <span class="highlights__num">102+</span>
+                    <span class="highlights__label">Apartamentos</span>
+                </div>
+                <div class="highlights__item" data-animate="fade-up" data-delay="100">
+                    <span class="highlights__num">3</span>
+                    <span class="highlights__label">Estrelas</span>
+                </div>
+                <div class="highlights__item" data-animate="fade-up" data-delay="200">
+                    <span class="highlights__num">7º</span>
+                    <span class="highlights__label">Andar com piscina térmica</span>
+                </div>
+                <div class="highlights__item" data-animate="fade-up" data-delay="300">
+                    <span class="highlights__num">24h</span>
+                    <span class="highlights__label">Recepção</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+        <div class="container sobre__inner">
+            <div class="sobre__media" data-animate="fade-right">
+                <img src="src/img/sobre-hotel01.jpg" alt="Hotel Jaraguá Real - história e tradição" class="sobre__img">
+                <img src="src/img/piscina.jpg" alt="Piscina térmica do Hotel Jaraguá" class="sobre__img sobre__img--alt">
+                <span class="sobre__badge">Desde <strong>2010</strong> servindo bem</span>
+            </div>
+            <div class="sobre__content" data-animate="fade-left">
+                <span class="section-tag">Sobre o hotel</span>
+                <h2 class="section-title">Tradição em <span class="gradient-text">servir bem</span></h2>
+                <p class="section-text">Nossa missão é satisfazer as necessidades de nossos clientes superando suas expectativas. Estamos sempre investindo em melhorias e inovação para que nossos hóspedes tenham uma ótima estada.</p>
+                <p class="section-text">Tradição, conforto e versatilidade caracterizam o Hotel Jaraguá como um dos tradicionais hotéis da região, localizado no centro de Joaçaba — a poucos passos da Catedral Santa Terezinha, Praça Kageyama e Parque da Cultura.</p>
+                <div class="sobre__features">
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Piscina Térmica &amp; Sauna</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Café da Manhã Colonial</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Espaço Fitness &amp; Business Center</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Estacionamento &amp; Wi-Fi grátis</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Sala de eventos &amp; reuniões</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Cartão Fidelidade</div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=554935277300" target="_blank" rel="noopener" class="btn btn--dark">Falar com a recepção</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- APARTAMENTOS -->
+    <section class="section apartamentos" id="apartamentos">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Hospedagem</span>
+                <h2 class="section-title">Apartamentos <span class="gradient-text">confortáveis</span></h2>
+                <p class="section-desc">Cada unidade conta com ar-condicionado, TV LCD, frigobar e opções de vista panorâmica para a cidade.</p>
+            </div>
+            <div class="apartamentos__grid">
+                <div class="apartamentos__card" data-animate="fade-up" data-delay="0">
+                    <div class="apartamentos__img" style="background-image:url('src/img/apartamentos.jpg')"></div>
+                    <div class="apartamentos__body">
+                        <h3>Apartamento Standard</h3>
+                        <p>Conforto para quem busca praticidade. Ar-condicionado, TV e frigobar.</p>
+                        <ul class="apartamentos__list">
+                            <li>Ar-condicionado</li><li>TV LCD</li><li>Frigobar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="apartamentos__card" data-animate="fade-up" data-delay="120">
+                    <div class="apartamentos__img" style="background-image:url('src/img/apartamentos.jpg')"></div>
+                    <div class="apartamentos__body">
+                        <h3>Suíte Executiva</h3>
+                        <p>Ideal para viagens a negócios, com espaço de trabalho e comodidades premium.</p>
+                        <ul class="apartamentos__list">
+                            <li>Escritório</li><li>Ar-condicionado</li><li>Wi-Fi dedicado</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="apartamentos__card" data-animate="fade-up" data-delay="240">
+                    <div class="apartamentos__img" style="background-image:url('src/img/apartamentos.jpg')"></div>
+                    <div class="apartamentos__body">
+                        <h3>Suíte Vista Panorâmica</h3>
+                        <p>Vista privilegiada para a cidade de Joaçaba, para uma estadia inesquecível.</p>
+                        <ul class="apartamentos__list">
+                            <li>Vista panorâmica</li><li>Ar-condicionado</li><li>Frigobar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAZER -->
+    <section class="section lazer" id="lazer">
+        <div class="container lazer__grid">
+            <div class="lazer__img" data-animate="fade-right" style="background-image:url('src/img/lazer.jpg')"></div>
+            <div class="lazer__content" data-animate="fade-left">
+                <span class="section-tag">Lazer</span>
+                <h2 class="section-title">Momentos de <span class="gradient-text">descanso</span></h2>
+                <p class="section-text">Ambientes pensados para você relaxar: piscina térmica, sauna, massoterapia, espaço fitness, bar, churrasqueira e sala de jogos.</p>
+                <div class="lazer__items">
+                    <div class="lazer__item"><strong>Piscina Térmica</strong><span>7º andar · 11h às 22h</span></div>
+                    <div class="lazer__item"><strong>Saunas</strong><span>Seg. a sáb. · 17h às 22h</span></div>
+                    <div class="lazer__item"><strong>Bar &amp; Churrasqueira</strong><span>Seg. a sáb. · 17h às 23h</span></div>
+                    <div class="lazer__item"><strong>Sala de Jogos</strong><span>7º andar · até 23h</span></div>
+                    <div class="lazer__item"><strong>Espaço Fitness</strong><span>10h às 21h</span></div>
+                    <div class="lazer__item"><strong>Massoterapia</strong><span>Sob consulta</span></div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=554935277300" target="_blank" rel="noopener" class="btn btn--gold">Agendar massagem</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTOS -->
+    <section class="section eventos" id="eventos">
+        <div class="container eventos__grid">
+            <div class="eventos__content" data-animate="fade-right">
+                <span class="section-tag">Eventos</span>
+                <h2 class="section-title">Centro de <span class="gradient-text">eventos</span></h2>
+                <p class="section-text">Salas equipadas para reuniões de grupos pequenos e médios, com estrutura completa para seus eventos corporativos, convenções e confraternizações.</p>
+                <div class="eventos__features">
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Salas de reunião equipadas</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Estrutura para grupos médios</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Apoio da gastronomia local</div>
+                    <div class="sobre__feature"><span class="sobre__ico">&#10003;</span> Localização central</div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=554935277300" target="_blank" rel="noopener" class="btn btn--dark">Solicitar proposta</a>
+            </div>
+            <div class="eventos__img" data-animate="fade-left" style="background-image:url('src/img/eventos.jpg')"></div>
+        </div>
+    </section>
+
+    <!-- GASTRONOMIA -->
+    <section class="section gastronomia" id="gastronomia">
+        <div class="container gastronomia__grid">
+            <div class="gastronomia__img" data-animate="fade-right" style="background-image:url('src/img/gastronomia.jpg')"></div>
+            <div class="gastronomia__content" data-animate="fade-left">
+                <span class="section-tag">Gastronomia</span>
+                <h2 class="section-title">Café da Manhã <span class="gradient-text">Colonial</span></h2>
+                <p class="section-text">Comece o dia com o tradicional café colonial do Hotel Jaraguá Real — uma seleção de pães, bolos, frios, frutas e delícias da região, servido com todo capricho.</p>
+                <div class="gastronomia__item">
+                    <span class="gastronomia__time">06h às 10h</span>
+                    <span class="gastronomia__place">Térreo · Restaurante</span>
+                </div>
+                <p class="section-text section-text--small">Restaurante e bar no local, com room service para maior comodidade dos hóspedes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="section produtos" id="produtos">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Nossos produtos</span>
+                <h2 class="section-title">Vantagens para <span class="gradient-text">você</span></h2>
+            </div>
+            <div class="produtos__grid">
+                <div class="produtos__card" data-animate="fade-up" data-delay="0">
+                    <div class="produtos__icon">&#9734;</div>
+                    <h3>Cartão Fidelidade</h3>
+                    <p>Pontue cada hospedagem e acumule descontos e benefícios exclusivos.</p>
+                </div>
+                <div class="produtos__card" data-animate="fade-up" data-delay="120">
+                    <div class="produtos__icon">&#9728;</div>
+                    <h3>Day Use</h3>
+                    <p>Aproveite a estrutura completa do hotel por um dia, sem pernoite.</p>
+                </div>
+                <div class="produtos__card" data-animate="fade-up" data-delay="240">
+                    <div class="produtos__icon">&#127873;</div>
+                    <h3>Vale Presente</h3>
+                    <p>Surpreenda com vales para café colonial e hospedagens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APRESENTAÇÃO / MOCKUP -->
+    <section class="mockup-note">
+        <div class="container">
+            <p class="mockup-note__text">&#9888;&#65039; This is a <strong>design mockup (proposal)</strong> created by <strong>Negócios Smart</strong> to modernize the hotel's website. Final photos and texts will be provided by the hotel. Original site: <a href="https://www.hoteljaraguareal.com.br" target="_blank" rel="noopener">hoteljaraguareal.com.br</a></p>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section localizacao" id="localizacao">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">Localização</span>
+                <h2 class="section-title">No <span class="gradient-text">centro</span> de Joaçaba</h2>
+                <p class="section-desc">Rua Francisco Lindner, nº 350 · Joaçaba - SC · CEP 89600-000</p>
+            </div>
+            <div class="localizacao__card" data-animate="fade-up">
+                <iframe src="https://maps.google.com/maps?q=Rua%20Francisco%20Lindner%20350%20Joa%C3%A7aba%20SC&t=&z=15&ie=UTF8&iwloc=&output=embed" class="localizacao__map" loading="lazy" title="Mapa - Hotel Jaraguá Real"></iframe>
+                <div class="localizacao__info">
+                    <a href="tel:+554935277300" class="localizacao__link">Reservas: (49) 3527-7300</a>
+                    <a href="https://api.whatsapp.com/send?phone=554935277300" target="_blank" rel="noopener" class="localizacao__link">WhatsApp: (49) 3527-7300</a>
+                    <a href="mailto:jaragua@hoteljaraguareal.com.br" class="localizacao__link">jaragua@hoteljaraguareal.com.br</a>
+                    <div class="localizacao__social">
+                        <a href="https://www.instagram.com/hoteljaragua/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                        <a href="https://www.facebook.com/hoteljaraguareal" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container cta__inner" data-animate="fade-up">
+            <h2 class="cta__title">Pronto para viver essa experiência?</h2>
+            <p class="cta__desc">Garanta sua reserva no Hotel Jaraguá Real e aproveite o melhor de Joaçaba.</p>
+            <div class="cta__actions">
+                <a href="https://reservas.desbravador.com.br/hotel-app/hotel-jaragua" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Faça sua reserva agora</a>
+                <a href="https://api.whatsapp.com/send?phone=554935277300" target="_blank" rel="noopener" class="btn btn--outline btn--lg">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <img src="src/img/logo.png" alt="Hotel Jaraguá Real">
+                <p>Tradição em servir bem. Conforto e versatilidade no coração de Joaçaba - SC.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/hoteljaragua/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://www.facebook.com/hoteljaraguareal" target="_blank" rel="noopener">Facebook</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Navegação</h4>
+                <a href="#sobre">Sobre o hotel</a>
+                <a href="#apartamentos">Apartamentos</a>
+                <a href="#lazer">Lazer</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#gastronomia">Gastronomia</a>
+            </div>
+            <div class="footer__col">
+                <h4>Serviços</h4>
+                <a href="#produtos">Cartão Fidelidade</a>
+                <a href="#produtos">Day Use</a>
+                <a href="#produtos">Vale Presente</a>
+                <a href="https://reservas.desbravador.com.br/hotel-app/hotel-jaragua" target="_blank" rel="noopener">Reservas online</a>
+            </div>
+            <div class="footer__col">
+                <h4>Contato</h4>
+                <a href="tel:+554935277300">(49) 3527-7300</a>
+                <a href="mailto:jaragua@hoteljaraguareal.com.br">jaragua@hoteljaraguareal.com.br</a>
+                <span>R. Francisco Lindner, 350 · Joaçaba - SC</span>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Hotel Jaraguá Real. Todos os direitos reservados.</p>
+                <p class="footer__credit">Mockup conceitual criado por <strong>Negócios Smart</strong> — sites.negociosmart.com.br</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=554935277300" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.7 5.9L4 29l8.3-1.7c1.8 1 3.8 1.6 5.7 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.9c-1.7 0-3.3-.5-4.7-1.3l-.3-.2-4.9 1 1-4.8-.2-.3c-.9-1.4-1.4-3.1-1.4-4.8C5.5 9.4 10 5 16 5s10.5 4.4 10.5 9.8-4.5 11.1-10.5 11.1zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+    </a>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
