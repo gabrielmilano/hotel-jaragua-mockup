@@ -1,4 +1,4 @@
-// HOTEL JARAGUÁ REAL — mockup Negócios Smart
+// HOTEL JARAGUÁ REAL
 (function () {
     "use strict";
 
